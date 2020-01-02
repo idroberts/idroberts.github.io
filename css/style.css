@@ -88,7 +88,6 @@
 	position:relative;
 	margin: 0px 20px 0px auto;
 	width: 630px;
-    vertical-align: middle;
     float: left;
 	text-align: left;
 	font-family: 'Ubuntu', sans-serif;
@@ -133,15 +132,29 @@
 	letter-spacing: 0.25px;
 }
 
+
+.contactcontainer {
+    display: flex;
+    align-items: center;
+    width: 550px;
+    margin: auto;
+}
+
 #contacttext {
 	position:relative;
 	margin: 0px auto 0px auto;
-	width: 550px;
+	width: 350px;
+    float: left;
 	text-align:left;
 	font-family: 'Ubuntu', sans-serif;
 	color: #808080;
 	line-height: 1.25;
 	letter-spacing: 0.25px;
+}
+
+#contactimg {
+    width:200px;
+    float:left;
 }
 
 #copyrighttext {
