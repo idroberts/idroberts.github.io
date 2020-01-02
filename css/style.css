@@ -73,6 +73,8 @@
     align-items: center;
     width: 850px;
     margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #pubimg {
