@@ -42,6 +42,7 @@
 	font-size: 25px;
 	font-family: 'Ubuntu', sans-serif;
 	width:650px;
+    color: #808080;
 	margin: 0px auto 0px auto;
 }
 
@@ -133,6 +134,30 @@
 	line-height: 1.25;
 	letter-spacing: 0.25px;
 }
+
+
+
+#notesheader {
+	position:relative;
+	margin: 0px auto 0px auto;
+	width: 650px;
+	font-family: 'Cinzel', serif;
+	color: #404040;
+	text-align:left;
+}
+
+
+#notestext {
+	position:relative;
+	margin: 0px auto 0px auto;
+	width: 600px;
+	text-align:left;
+	font-family: 'Ubuntu', sans-serif;
+	color: #808080;
+	line-height: 1.25;
+	letter-spacing: 0.25px;
+}
+
 
 
 .contactcontainer {
