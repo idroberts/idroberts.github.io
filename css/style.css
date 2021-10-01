@@ -41,7 +41,7 @@
 	height:60px;
 	font-size: 25px;
 	font-family: 'Ubuntu', sans-serif;
-	width:650px;
+	width:800px;
     color: #808080;
 	margin: 0px auto 0px auto;
 }
@@ -49,7 +49,7 @@
 #hometext {
 	position:relative;
 	margin: 0px auto 0px auto;
-	width: 500px;
+	width: 600px;
 	text-align:justify;
 	font-family: 'Ubuntu', sans-serif;
 	color: #808080;
@@ -187,7 +187,7 @@
 #copyrighttext {
 	position:relative;
 	margin: 0px auto 0px auto;
-	width: 650px;
+	width: 800px;
 	text-align:right;
 	font-family: 'Ubuntu', sans-serif;
 	color: #C0C0C0;
