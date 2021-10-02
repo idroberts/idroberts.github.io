@@ -76,6 +76,15 @@
 	<p><img src="images/in_the_works/psci_fig2.png" alt="Roberts et al. (in press) - Figure 2"
 		style="width:700px;display:block;margin-left:auto;margin-right:auto;width:50%;"></p>
 
+	<p>The above plot on the right shows the very first fixation to an option. This raises the 
+		question, how do people know where to look first? We thought they might be able to use 
+		their peripheral vision to detect the colors of the pie charts that were used to display 
+		the option probabilities. This predicts that fixation should be influenced by gamble 
+		probability, even though people haven't looked at the gamble yet. And that's what we found:</p>
+
+	<p><img src="images/in_the_works/psci_fig3.png" alt="Roberts et al. (in press) - Figure 3"
+			style="width:700px;display:block;margin-left:auto;margin-right:auto;width:50%;"></p>
+
 	<p>This work is in press at <span style="color: #59C317;font-weight:bold;"><em>Psychological Science</em></span>.</p>
 
 	<p>Next, we wanted to try some formal tests to see just how much attentional patterns can 
@@ -101,7 +110,7 @@
 
 	<p>The <span style="color: red;font-weight:bold;">red</span> segment of the evidence accumulation 
 		process represents System 1 in the dual-system model and time when only one option has been attended in 
-		the gaze-informed model. Note the similar effect they can have on preference early 
+		the gaze-informed model. Note the similar effect System 1 and early attention can have on evidence early 
 		on in the choice process.</p>
 
 	<p>Comparing model fits, we found that 
@@ -110,8 +119,70 @@
 		parameters from the dual-system model, we found 
 		<span style="color: #59C317;font-weight:bold;">people with stronger early attention biases 
 		tended to spend more time in System 1 before switching to System 2</span>. This provides further 
-		support to the idea that dual-system models might sometimes be picking up on attentional dynamics.</p>
+		support to the idea that dual-system models might sometimes be picking up on attentional dynamics.
+		A preprint of this work will be available soon.</p>
+	
+	<p>But how much does early attention really matter? To test this, we've run a few experiments where
+		we simply remove the different pie chart colors that people had used as peripheral cues. When we do this,
+		the overall effect of time pressure on framing effects goes away. In fact, the framing effect is now 
+		<em>smaller</em> under time pressure!
+	</p>
 
+	<p><img src="images/in_the_works/ph_riskyChoice_feedbackOnly.png" alt="Manipulating peripheral cues"
+		style="width:700px;display:block;margin-left:auto;margin-right:auto;width:50%;"></p>
+
+	<p>Preprint of this work is also coming soon.</p>
+
+	<p>We think these results clearly show that visual attention is critical for the producing the framing 
+		effect <span style="color: #59C317;font-weight:bold;">in this particular task</span>. Furthermore,
+		our <span style="color: #59C317;font-weight:bold;">gaze-informed model</span> shows that attentional
+		patterns can account for the framing effects observed under no time pressure as well!</p>
+		
+	<p>But none of these results answer the question: 
+	<span style="color: #59C317;font-weight:bold;">What's driving attention?</span></p>
+
+	<p>To explain attention, I've been working on a new computational model that I call 
+		the <span style="color: #59C317;font-weight:bold;">attention-guided 
+		Bayesian-learning model of framing effects</span>. In a nutshell, the idea 
+		is that at each moment when making a decision our participants can opt for one of the following:
+
+		<ol type="1">
+			<li>Terminate information search and choose the option they currently think is best</li>
+			<li>Gather more information about the options</li>
+		</ol>
+	</p>
+
+	<p>Gathering information means refining their beliefs about each option's attributes. For the gamble, 
+		participants can learn about its outcomes and its probability:
+	</p>
+
+	<p><img src="images/in_the_works/gamble_priors.png" alt="Gamble priors"
+		style="width:700px;display:block;margin-left:auto;margin-right:auto;width:50%;"></p>
+
+	<p>Meanwhile, the sure option has attributes for the seen and unseen framings 
+		(we assume they know the probability of 1.0 with confidence):
+	</p>
+
+	<p><img src="images/in_the_works/sureOption_priors.png" alt="Sure option priors"
+		style="width:700px;display:block;margin-left:auto;margin-right:auto;width:50%;"></p>
+
+	<p>How do they update these beliefs? According to the model, by drawing
+		noisy perceptual samples while looking at the visual information. They 
+	incorporate these samples to update their beliefs in a Bayesian sense:</p>
+
+	<p><img src="images/in_the_works/lossFrame_updatePrior.png" alt="Loss belief updating"
+		style="width:700px;display:block;margin-left:auto;margin-right:auto;width:50%;"></p>
+	
+	<p>Importantly, if you want to learn, you should inspect the thing you're the most unsure about. 
+	And that's on way attention works in our model. A decision-maker's attention is drawn 
+	to the option she knows the least about. Additionally, attention can be drawn by beliefs about value.</p>
+
+	<p>My model has another feature worth mentioning: people use mental conversions 
+		to sample the unseen framing of the sure option.</p>
+	
+	<p>We're working out final details in this model but so far it's 
+		succeeding in accounting for both attention and choice in the framing 
+		effects task. Stay tuned!</p>
 	
 </div>
 
